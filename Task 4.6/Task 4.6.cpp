@@ -6,12 +6,13 @@ void task_1();
 void task_2();
 void task_3();
 void task_4();
+void draw_cube(int value);
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    task_1();
+    task_2();
 
     return 0;
 }
@@ -44,5 +45,72 @@ void task_1()
         if (direction == 'v') cout << endl;
         else cout << "\t";
         Sleep(speed * 100);
+    }
+}
+
+void task_2()
+{
+    draw_cube(3);
+}
+
+void draw_cube(int value)
+{
+    system("cls");
+    switch (value)
+    {
+    case(1):
+    {
+        cout << "+-------+\n";
+        cout << "|       |\n";
+        cout << "|   *   |\n";
+        cout << "|       |\n";
+        cout << "+-------+\n";
+    }
+    break;
+    case(2):
+    {
+        cout << "+-------+\n";
+        cout << "| *     |\n";
+        cout << "|       |\n";
+        cout << "|     * |\n";
+        cout << "+-------+\n";
+    }
+    break;
+    case(3):
+    {
+        cout << "+-------+\n";
+        cout << "| *     |\n";
+        cout << "|   *   |\n";
+        cout << "|     * |\n";
+        cout << "+-------+\n";
+    }
+    break;
+    case(4):
+    {
+        cout << "+-------+\n";
+        cout << "| *   * |\n";
+        cout << "|       |\n";
+        cout << "| *   * |\n";
+        cout << "+-------+\n";
+    }
+    break;
+    case(5):
+    {
+        cout << "+-------+\n";
+        cout << "| *   * |\n";
+        cout << "|   *   |\n";
+        cout << "| *   * |\n";
+        cout << "+-------+\n";
+    }
+    break;
+    case(6):
+    {
+        cout << "+-------+\n";
+        cout << "| *   * |\n";
+        cout << "| *   * |\n";
+        cout << "| *   * |\n";
+        cout << "+-------+\n";
+    }
+    break;
     }
 }
