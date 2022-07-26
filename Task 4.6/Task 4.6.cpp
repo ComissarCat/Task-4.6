@@ -9,12 +9,13 @@ void task_4();
 void draw_dice(int value);
 void dice_roll(bool& player_move, int& player_score, int& computer_score);
 void round(int level, bool upgraded, int& score, int& computer_score);
+void menu();
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    task_4();
+    menu();
 
     return 0;
 }
@@ -48,6 +49,7 @@ void task_1()
         else cout << "\t";
         Sleep(speed * 100);
     }
+    cout << "\n\n";
 }
 
 void task_2()
@@ -264,4 +266,19 @@ void round(int level, bool upgraded, int& score, int& computer_score)
             break;
         }
     }
+}
+
+void menu()
+{
+    int task = 0;
+    void(*list_of_menu[4])() = { task_1, task_2, task_3, task_4 };    
+    do
+    {
+        do
+        {
+            cout << "Введите номер задачи, 0 - выход: ";
+            cin >> task;
+        } while (task < 0 or task > 3);
+        if (task) list_of_menu[task - 1]();
+    } while (task);
 }

@@ -1,4 +1,4 @@
 ﻿  Task 4.6.cpp
-C:\Users\Медведев\source\repos\Task 4.6\Task 4.6\Task 4.6.cpp(150,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Медведев\source\repos\Task 4.6\Task 4.6\Task 4.6.cpp(213,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Медведев\source\repos\Task 4.6\Task 4.6\Task 4.6.cpp(151,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Медведев\source\repos\Task 4.6\Task 4.6\Task 4.6.cpp(214,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Task 4.6.vcxproj -> C:\Users\Медведев\source\repos\Task 4.6\x64\Debug\Task 4.6.exe
